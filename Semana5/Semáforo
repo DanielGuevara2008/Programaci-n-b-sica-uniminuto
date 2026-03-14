@@ -1,0 +1,7 @@
+Semáforo=input("de que color es el semáforo:")
+if Semáforo == "verde" or "Verde" or "VERDE":
+    print("puedes pasar")
+elif Semáforo == "Amarillo" or "amarillo" or "AMARILLO":
+    print("Preparate")
+elif Semáforo == "Rojo" or "rojo" or "ROJO":
+    print("Detente")
