@@ -1,0 +1,6 @@
+#Programa con condicionales
+edad=int(input("Ingresa tu edad"))
+if edad >=18:
+    print("Puedes ingresar a la discoteca")
+else:
+    print("vayase para su casa")    
