@@ -1,0 +1,31 @@
+#ALGORITMO
+#Iniciar
+#Pedir al usuario que ingrese su jugada (Piedra, Tijera o Papel)
+#Guardar la respuesta
+#Evaluar la respuesta:
+#Si es "Piedra" → mostrar empate
+#Si es "Tijera" → mostrar que pierde
+#Si es "Papel" → mostrar que gana
+#Mostrar el resultado
+#Finalizar
+#PSEUDOCODIGO
+#INICIO
+#ESCRIBIR "¿Qué jugaste? (Piedra, Tijera o Papel)"
+#LEER respuesta
+#SI respuesta = "Piedra" ENTONCES
+#ESCRIBIR "EMPATE, la máquina también jugó Piedra"
+#SINO SI respuesta = "Tijera" ENTONCES
+#ESCRIBIR "PERDISTE, la máquina jugó Piedra"
+#SINO SI respuesta = "Papel" ENTONCES
+#ESCRIBIR "GANASTE, la máquina jugó Piedra"
+#FIN SI
+#FIN
+
+
+respuesta=input("¿Que jugaste?(Piedra, Tijera o Papel)")
+if respuesta=="Piedra":
+    print("EMPATE, la maquina tambien jugo Piedra")
+elif respuesta=="Tijera":
+    print("PERDISTE, la maquina jugo Piedra")
+elif respuesta=="Papel":
+    print("GANASTE, la maquina jugo piedra")
