@@ -1,4 +1,22 @@
 #Programa con condicionales
+#ALGORITMO
+#Iniciar
+#Pedir al usuario su edad
+#Guardar la edad
+#Evaluar la edad:
+#Si edad es mayor o igual a 18 → permitir ingreso
+#Si no → negar ingreso
+#Mostrar el mensaje correspondiente
+#Finalizar
+#PSEUDOCODIGO
+#INICIO
+#ESCRIBIR "Ingresa tu edad"
+#LEER edad
+#SI edad >= 18 ENTONCES
+#ESCRIBIR "Puedes ingresar a la discoteca"
+#SINO
+#ESCRIBIR "Váyase para su casa"
+#FIN
 edad=int(input("Ingresa tu edad"))
 if edad >=18:
     print("Puedes ingresar a la discoteca")
