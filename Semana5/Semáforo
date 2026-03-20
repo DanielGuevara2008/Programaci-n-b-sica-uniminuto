@@ -1,7 +1,29 @@
+#ALGORITMO
+#Iniciar
+#Pedir al usuario el color del semáforo
+#Guardar el valor ingresado
+#Evaluar el color:
+#Si es "Verde" → puede pasar
+#Si es "amarillo" → prepararse
+#Si es "Rojo" → detenerse
+#Mostrar el mensaje correspondiente
+#Finalizar
+#PSEUDOCODIGO
+#INICIO
+#ESCRIBIR "¿De qué color es el semáforo?"
+#LEER Semaforo
+#SI Semaforo = "Verde" ENTONCES
+#ESCRIBIR "Puedes pasar"
+#SINO SI Semaforo = "amarillo" ENTONCES
+#ESCRIBIR "Prepárate"
+#SINO SI Semaforo = "Rojo" ENTONCES
+#ESCRIBIR "Detente"
+#FIN
+
 Semáforo=input("de que color es el semáforo:")
-if Semáforo == "verde" or "Verde" or "VERDE":
+if Semáforo == "Verde":
     print("puedes pasar")
-elif Semáforo == "Amarillo" or "amarillo" or "AMARILLO":
+elif Semáforo == "amarillo":
     print("Preparate")
-elif Semáforo == "Rojo" or "rojo" or "ROJO":
+elif Semáforo == "Rojo":
     print("Detente")
