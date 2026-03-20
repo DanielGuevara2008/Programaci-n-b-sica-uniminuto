@@ -1,0 +1,117 @@
+#ALGORITMO
+#Pedir al usuario el tipo de membresía
+#Pedir el valor de la compra
+#Preguntar si es temporada de rebajas
+#Convertir la respuesta de temporada en un valor booleano (True/False)
+#Inicializar:
+#descuento en 0
+#envío gratis en falso
+#Evaluar la membresía:
+#Si es regular → descuento 0
+#Si es silver:
+#Si compra > 50.000 → descuento 10%
+#Si es gold:
+#descuento 20%
+#Si compra > 100.000 → envío gratis
+#Si es temporada de rebajas:
+#aumentar el descuento en 5%
+#Calcular el precio final aplicando el descuento
+#Mostrar:
+#porcentaje de descuento
+#precio final
+#si tiene o no envío gratis
+#PSEUDOCODIGO
+#Inicio
+#Escribir "Tipo de membresía (regular / silver / gold):"
+#Leer membresia
+#Escribir "Valor de la compra:"
+#Leer compra
+#Escribir "¿Es temporada de rebajas? (si/no):"
+#Leer temporada
+#Si temporada = "si" Entonces
+#es_temporada ← Verdadero
+#Sino
+#es_temporada ← Falso
+#FinSi
+#descuento ← 0
+#envio_gratis ← Falso
+#Si membresia = "regular" Entonces
+#descuento ← 0
+#Sino Si membresia = "silver" Entonces
+#Si compra > 50000 Entonces
+#descuento ← 10
+#FinSi
+#Sino Si membresia = "gold" Entonces
+#descuento ← 20
+#Si compra > 100000 Entonces
+#envio_gratis ← Verdadero
+#FinSi
+#FinSi
+#Si es_temporada Entonces
+#escuento ← descuento + 5
+#FinSi
+#precio_final ← compra * (1 - descuento / 100)
+#Escribir "Descuento aplicado:", descuento, "%"
+#Escribir "Precio final:", precio_final
+#Si envio_gratis Entonces
+#Escribir "Tienes envío gratis"
+#Sino
+#Escribir "No tienes envío gratis"
+#FinSi
+#Fin
+
+# Pedimos el tipo de membresía y lo pasamos a minúsculas
+membresia = input("Tipo de membresía (regular / silver / gold): ").lower()
+
+# Pedimos el valor de la compra y lo convertimos a número (float)
+compra = float(input("Valor de la compra: "))
+
+# Preguntamos si es temporada de rebajas y lo pasamos a minúsculas
+temporada = input("¿Es temporada de rebajas? (si/no): ").lower()
+
+# Convertimos la respuesta en un booleano (True o False)
+# Será True si el usuario escribe "si"
+es_temporada = temporada == "si"
+
+# Inicializamos variables
+descuento = 0        # porcentaje de descuento (empieza en 0)
+envio_gratis = False # envío gratis (empieza en falso)
+
+# Lógica según tipo de membresía
+if membresia == "regular":
+    # No tiene descuento
+    descuento = 0
+
+elif membresia == "silver":
+    # Solo tiene descuento si compra más de 50.000
+    if compra > 50000:
+        descuento = 10
+
+elif membresia == "gold":
+    # Siempre tiene 20% de descuento
+    descuento = 20
+
+    # Si compra más de 100.000, tiene envío gratis
+    if compra > 100000:
+        envio_gratis = True
+
+# Si es temporada de rebajas, se suma un 5% extra al descuento
+if es_temporada:
+    descuento += 5  # ejemplo: 20 → 25
+
+# Calculamos el precio final
+# descuento / 100 convierte el porcentaje a decimal (ej: 25 → 0.25)
+# 1 - eso = lo que realmente paga el cliente
+precio_final = compra * (1 - descuento / 100)
+
+# Mostramos el descuento aplicado
+print(f"Descuento aplicado: {descuento}%")
+
+# Mostramos el precio final
+print(f"Precio final: ${precio_final}")
+
+# Mostramos si tiene envío gratis o no
+if envio_gratis:
+    print("Tienes envío gratis 🚚")
+else:
+    print("El envío no es gratis")
