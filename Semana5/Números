@@ -1,3 +1,25 @@
+#ALGORITMO
+#Iniciar
+#Pedir al usuario un número
+#Guardar el número
+#Evaluar el número:
+#Si es mayor que 0 → es positivo
+#Si es menor que 0 → es negativo
+#Si es igual a 0 → es neutro
+#Mostrar el resultado
+#Finalizar
+#PSEUDOCOGIDO
+#INICIO
+#ESCRIBIR "Ingresa un número"
+#LEER numero
+#SI numero > 0 ENTONCES
+#ESCRIBIR "Este número es positivo"
+#SINO SI numero < 0 ENTONCES
+#ESCRIBIR "Este número es negativo"
+#SINO
+#ESCRIBIR "Este número es neutro"
+#FIN
+
 Numero=float(input("ingresa un número"))
 if Numero > 0:
     print("este número es positivo")
