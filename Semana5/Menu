@@ -1,0 +1,31 @@
+#ALGORITMO
+#Pedir al usuario el plato que desea comer
+#Evaluar el plato ingresado:
+#Si es "bandeja paisa" → mostrar precio 18.000
+#Si es "ajiaco" → mostrar precio 15.000
+#Si es "sancocho" → mostrar precio 12.000
+#Si no coincide con ninguno → mostrar mensaje de error
+#PSEUDOCODIGO
+#Inicio
+#Escribir "¿Qué plato deseas comer?"
+#Leer comida
+#Si comida = "bandeja paisa" Entonces
+#Escribir "Valor = 18.000"
+#Sino Si comida = "ajiaco" Entonces
+#Escribir "Valor = 15.000"
+#Sino Si comida = "sancocho" Entonces
+#Escribir "Valor = 12.000"
+#Sino
+#Escribir "Ese plato no está en el menú"
+#Fin
+
+Mostrar el resultado en pantalla
+Comida=input("Que plato deseas comer").lower()
+if Comida=="bandeja paisa":
+    print("Valor=18.000")
+elif Comida=="ajiaco":
+    print("Valor=15.000")
+elif Comida=="sancocho":
+    print("Valor=12.000")
+else:
+    print("Ese plato no esta en el menu")
