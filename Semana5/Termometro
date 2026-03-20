@@ -1,0 +1,43 @@
+#ALGORITMO
+#Pedir al usuario que ingrese la temperatura
+#Guardar la temperatura en una variable
+#Evaluar la temperatura:
+#Si es menor a 5 → mostrar "MUY FRIO"
+#Si está entre 5 y 14 → mostrar "FRIO"
+#Si está entre 15 y 24 → mostrar "TEMPLADO"
+#Si está entre 25 y 34 → mostrar "CALIENTE"
+#Si es mayor o igual a 35 → mostrar "MUY CALIENTE"
+#Mostrar el resultado en pantalla
+#PSEUDOCODIGO
+#Inicio
+#Escribir "Ingrese la temperatura"
+#Leer temperatura
+#Si temperatura < 5 Entonces
+#Escribir "MUY FRIO"
+#Sino Si temperatura >= 5 Y temperatura <= 14 Entonces
+#Escribir "FRIO"
+#Sino Si temperatura >= 15 Y temperatura <= 24 Entonces
+#Escribir "TEMPLADO"
+#Sino Si temperatura >= 25 Y temperatura <= 34 Entonces
+#Escribir "CALIENTE"
+#Sino
+#Escribir "MUY CALIENTE"
+#Fin
+
+Temperatura=float(input("Ingrese la temperatura")) 
+
+
+if Temperatura<5:
+     print("MUY FRIO") 
+
+elif Temperatura>=5 and Temperatura<=14:
+     print("FRIO") 
+
+elif Temperatura>=15 and Temperatura<=24:
+     print("TEMPLADO") 
+
+elif Temperatura>=25 and Temperatura<=34:
+     print("CALIENTE") 
+
+elif Temperatura>=35:     
+     print("MUY CALIENTE")
