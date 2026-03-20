@@ -1,3 +1,22 @@
+#ALGORITMO
+#Iniciar
+#Pedir al usuario su nota
+#Guardar la nota
+#Evaluar:
+#Si la nota es mayor o igual a 3.0 → aprobó
+#Si no → no aprobó
+#Mostrar el resultado
+#Finalizar
+#PSEUDOCODIGO
+#INICIO
+#ESCRIBIR "Ingresa tu nota"
+#LEER nota
+#SI nota >= 3.0 ENTONCES
+#ESCRIBIR "Aprobaste la materia"
+#SINO
+#ESCRIBIR "No aprobaste la materia"
+#FIN
+
 nota=float(input("Ingresa tu nota"))
 if nota >= 3.0:
     print("Aprobaste la materia")
