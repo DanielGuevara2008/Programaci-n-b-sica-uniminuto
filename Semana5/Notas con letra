@@ -1,0 +1,39 @@
+#ALGORITMO
+#Iniciar
+#Pedir la nota
+#Guardar la nota
+#Evaluar en rangos:
+#≥ 4.5 → A
+#≥ 4.0 → B
+#≥ 3.5 → C
+#≥ 3.0 → D
+#< 3.0 → E
+#Mostrar resultado
+#Finalizar
+#PSEUDOCODIGO
+#INICIO
+#ESCRIBIR "Ingresa tu nota"
+#LEER Nota
+#SI Nota >= 4.5 ENTONCES
+#ESCRIBIR "Excelente, tu nota es A"
+#SINO SI Nota >= 4.0 ENTONCES
+#ESCRIBIR "Sobresaliente, tu nota es B"
+#SINO SI Nota >= 3.5 ENTONCES
+#ESCRIBIR "Bueno, tu nota es C"
+#SINO SI Nota >= 3.0 ENTONCES
+#ESCRIBIR "Aceptable, tu nota es D"
+#SINO
+#ESCRIBIR "Tu nota es E, has reprobado"
+#FIN
+Nota=float(input("Ingresa tu nota"))
+
+if Nota >= 4.5 and Nota <= 5.0:
+    print("Excelente, tu nota es A")
+elif Nota >= 4.0 and Nota < 4.5:
+    print("Sobresaliente, tu nota es B")
+elif Nota >= 3.5 and Nota < 4.0:
+    print("Bueno, tu nota es C")
+elif Nota >= 3.0 and Nota < 3.5:
+    print("Aceptable, tu nota es D")
+elif Nota >= 0.0 and Nota < 3.0:
+    print("Tu nota es E, has reprobado, requieres habilitación")
