@@ -31,4 +31,4 @@ elif Consumo >30:
 else:
     print(Nombre)
     print("Dato inválido")
-    print("Error: el consumo debe ser un número mayor a 0")
+    print("Error: el consumo debe ser mayor a 0")
