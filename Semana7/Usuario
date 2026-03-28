@@ -1,0 +1,7 @@
+Usuario=(input("Ingresa tu usuario"))
+
+Contraseña=int(input("Ingrese su contraseña"))
+if Usuario == "admin" and Contraseña == 1234:
+   print("Acceso concedido. Bienvenido!")
+else:
+   print("Acceso denegado. Datos incorrectos.")
