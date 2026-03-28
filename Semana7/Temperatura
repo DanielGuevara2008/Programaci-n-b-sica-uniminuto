@@ -1,0 +1,11 @@
+Temperatura=int(input("Temperatura en grados Celsius:"))
+if Temperatura < 0:
+    print("MUY FRIA")
+elif Temperatura >= 0 and Temperatura < 15:
+     print("FRIA")
+elif Temperatura >= 15 and Temperatura < 25:
+     print("TEMPLADA: temperatura ideal")
+elif Temperatura > 25 and Temperatura <= 35:
+     print("CALIDA")
+else:
+      print("EXTREMO CALOR")
