@@ -1,0 +1,7 @@
+Pasaporte=input("¿Tienes pasaporte vigente? (si/no):").lower
+Visa=input("Tienes visa? (si/no):").lower
+Excento=input("Tu pais esta excento de visa? (si/no):").lower
+if Pasaporte == "si" and Visa == "si" or Excento == "si":
+      print("Puedes viajar. Buen viaje!")
+else:
+      print("No puedes viajar. Revisa tus documentos.")
