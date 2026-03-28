@@ -1,0 +1,7 @@
+Edad=int(input("Ingresa tu edad"))
+
+Licencia=input("Tienes licencia vigente?").lower()
+if Edad >= 18 and Licencia == "si":
+   print("Puedes conducir. Maneja con cuidado!")
+else:
+   print("No puedes conducir.")
