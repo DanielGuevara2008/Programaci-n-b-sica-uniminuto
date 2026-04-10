@@ -1,0 +1,16 @@
+print("=== PARTE A: Regla AND ===")
+edad = int(input("Ingresa tu edad: "))
+carnet = input("¿Tienes carnet vigente? (si/no): ").strip().lower()
+
+if edad > 14 and carnet == "si":
+    print("Bienvenido al gimnasio")
+else:
+    print("Acceso denegado")
+print("\n=== PARTE B: Regla OR ===")
+pase = input("¿Tienes pase de invitado? (si/no): ").strip().lower()
+con_socio = input("¿Vienes con un socio activo? (si/no): ").strip().lower()
+
+if pase == "si" or con_socio == "si":
+    print("Puede ingresar")
+else:
+    print("No puede ingresar")
